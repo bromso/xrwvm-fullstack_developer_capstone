@@ -28,8 +28,11 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-CSRF_TRUSTED_ORIGINS = []
+# Add the host to ALLOWED_HOSTS
+ALLOWED_HOSTS = ['legitcollage-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai', 'localhost', '127.0.0.1']
+
+# Add the origin to CSRF_TRUSTED_ORIGINS
+CSRF_TRUSTED_ORIGINS = ['https://legitcollage-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
