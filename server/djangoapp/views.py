@@ -53,8 +53,18 @@ def logout_request(request):
 
 # # Update the `get_dealerships` view to render the index page with
 # a list of dealerships
-# def get_dealerships(request):
-# ...
+def get_dealers(request):
+    try:
+        dealers = Dealership.objects.all()
+        if not dealers:
+            logger.info("No dealerships found")
+            return JsonResponse({"error": "No dealerships found"}, status=404)
+        
+        dealers_list = [{"id": dealer.id, "name": dealer.name} for dealer in dealers]
+        return JsonResponse({"dealers": dealers_list}, status=200)
+    except Exception as e:
+        logger.error(f"Error retrieving dealers: {e}")
+        return JsonResponse({"error": "Server error while retrieving dealers"}, status=500)
 
 # Create a `get_dealer_reviews` view to render the reviews of a dealer
 # def get_dealer_reviews(request,dealer_id):
