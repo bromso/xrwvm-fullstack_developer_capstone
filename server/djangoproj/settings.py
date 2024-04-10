@@ -29,7 +29,7 @@ SECRET_KEY =\
 DEBUG = True
 
 # Add the host to ALLOWED_HOSTS
-ALLOWED_HOSTS = ['legitcollage-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost','legitcollage-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
 
 # Add the origin to CSRF_TRUSTED_ORIGINS
 CSRF_TRUSTED_ORIGINS = ['https://legitcollage-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
@@ -146,4 +146,3 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build'),
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-

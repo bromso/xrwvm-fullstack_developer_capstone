@@ -182,3 +182,25 @@ Push your changes:
 ```sh
 git push
 ```
+
+Build docker container:
+
+```sh
+docker build -t us.icr.io/sn-labs-legitcollage/dealership .
+```
+
+Push docker image to container registry:
+
+```sh
+docker push us.icr.io/sn-labs-legitcollage/dealership
+```
+
+Deploy the application via kubernetes:
+
+```sh
+kubectl apply -f deployment.yaml
+```
+
+```sh
+kubectl port-forward deployment.apps/dealership 8000:8000
+```
