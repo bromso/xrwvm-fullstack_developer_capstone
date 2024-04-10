@@ -182,6 +182,19 @@ Push your changes:
 ```sh
 git push
 ```
+Sentianalyzer:
+
+```sh
+docker build . -t us.icr.io/sn-labs-legitcollage/senti_analyzer
+```
+
+```sh
+docker push us.icr.io/sn-labs-legitcollage/senti_analyzer
+```
+
+```sh
+ibmcloud ce application create --name sentianalyzer --image us.icr.io/sn-labs-legitcollage/senti_analyzer --registry-secret icr-secret --port 5000
+```
 
 Build docker container:
 
