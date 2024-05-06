@@ -143,7 +143,6 @@ Push to IBM Cloud Foundry:
 
 - Install the IBM Cloud CLI and the cloud foundry plugin
 - Configure the `manifest.yml` file
-- `ìbmcloud cf push`
 
 ### Git
 
@@ -182,6 +181,14 @@ Push your changes:
 ```sh
 git push
 ```
+
+Syncronize Database
+
+```sh
+python3 manage.py makemigrations
+python3 manage.py migrate --run-syncdb
+```
+
 Sentianalyzer:
 
 ```sh
