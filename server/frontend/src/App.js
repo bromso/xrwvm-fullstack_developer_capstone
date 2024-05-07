@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 import LoginPanel from "./components/Login/Login"
 import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register/Register";
@@ -15,5 +16,6 @@ function App() {
       <Route path="/postreview/:id" element={<PostReview/>} />
     </Routes>
   );
+ 
 }
 export default App;
