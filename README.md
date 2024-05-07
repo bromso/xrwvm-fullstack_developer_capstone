@@ -77,6 +77,20 @@ Containerize your application
 1. Add deployment artifacts to your application
 2. Deploy your application
 
+### Database
+
+```sh
+cd /home/project/xrwvm-fullstack_developer_capstone/server/database
+```
+
+```sh
+docker build . -t nodeapp
+```
+
+```sh
+docker-compose up
+```
+
 ---
 
 ## Quickstart
