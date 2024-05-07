@@ -30,12 +30,12 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '[::1]',
-    ('legitcollage-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    ('https://legitcollage-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/'
      'proxy.cognitiveclass.ai')
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    ('legitcollage-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    ('https://legitcollage-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/'
      'proxy.cognitiveclass.ai')
 ]
 
